@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    width: 150px;
+    height: 40px;
+}
+.grid-container {
+    display: grid;
+    width: 900px;
+    height: 900px;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+.grid-item {
+    display: grid;
+    border: 1px solid black;
+}
+
+.mouseover {
+    background-color: blueviolet;
+}
