@@ -32,13 +32,13 @@ const clearBoard = () => {
 const resizeGrid = () => {
     button.addEventListener('click', () => {
         let size = prompt('Enter the base number for your grid:')
-        if(size > 100){
+        console.log(size)
+        if(size > 100 || size === 0 || size === false){ // still need to work out ok with no string entered, also cancel button
             size = 0
-            size = prompt('Enter the base number for your grid:')
             resizeGrid() 
         }
         clearBoard()
-        gridSetup(size)
+        gridSetup(size)   
     })
 }
 
